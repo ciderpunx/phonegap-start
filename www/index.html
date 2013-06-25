@@ -23,12 +23,44 @@
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
+				<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+				<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+				<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
         <title>Hello Newint</title>
     </head>
     <body>
-        <div class="app">
-            <h1>New Internationalist demo app for app group</h1>
-					<div class="section group">
+<!-- Home -->
+<div data-role="page" id="page1" class="app">
+    <div data-theme="a" data-role="header" data-position="fixed">
+        <h3>
+            New Int Demo App
+        </h3>
+    </div>
+    <div data-role="content">
+        <div id="btn-mag" data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#page1" data-transition="fade" data-theme="" data-icon="">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#page1" data-transition="fade" data-theme="" data-icon="">
+                        Magazine
+                    </a>
+                </li>
+                <li>
+                    <a href="#page1" data-transition="fade" data-theme="" data-icon="">
+                        Blogs
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+<h1>New Internationalist demo app for app group</h1>
+<div class="section group">
 
 <div class="article hfeed">
 
@@ -270,31 +302,12 @@
     </ul>
     </div>
 
-<div class="pagination">
-<ul>
-<li><a href="http://newint.org/index.html" class="currentpage">1</a></li>
-<li><a href="http://newint.org/index1.html" >2</a></li>
-<li><a href="http://newint.org/index2.html" >3</a></li>
-<li><a href="http://newint.org/index3.html" >4</a></li>
-<li><a href="http://newint.org/index4.html" >5</a></li>
-<li><a href="http://newint.org/index5.html" >6</a></li>
-<li><a href="http://newint.org/index6.html" >7</a></li>
-<li><a href="http://newint.org/index7.html" >8</a></li>
-<li><a href="http://newint.org/index8.html" >9</a></li>
-<li><a href="http://newint.org/index9.html" >10</a></li>
-<li><a href="http://newint.org/blog/index1.html" class="prevnext">Next</a></li>
-</ul>		
-<p>Page 1 of 10</p>
 </div>
-<h3>Didn't find it?</h3> 
-        <ul>
-         <li><a href="http://newint.org/search/">Search</a> for that which you seek</li>
-         <li>Browse articles by <a href="http://newint.org/themes/full-index/">theme</a></li>
-         <li>&hellip; or by <a href="http://newint.org/tag/">tag</a></li>
-         <li>&hellip; or by <a href="http://newint.org/contributors/">contributor</a></li>
-         <li>Browse our listing of <a href="http://newint.org/columns/country/list">Country Profiles</a></li>
-        </ul>
-
+<div data-theme="a" data-role="footer" data-position="fixed">
+        <h3>
+            (c)2013 New Internationalist
+        </h3>
+    </div>
 </div>
 	
         </div>
